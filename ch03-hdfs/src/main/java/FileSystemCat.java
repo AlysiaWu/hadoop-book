@@ -11,7 +11,7 @@ import org.apache.hadoop.io.IOUtils;
 public class FileSystemCat {
 
   public static void main(String[] args) throws Exception {
-    String uri = args[0];
+    String uri = "hdfs://localhost/user/root/a.txt";
     Configuration conf = new Configuration();
     FileSystem fs = FileSystem.get(URI.create(uri), conf);
     InputStream in = null;

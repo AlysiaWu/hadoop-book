@@ -14,8 +14,8 @@ import org.apache.hadoop.util.Progressable;
 // vv FileCopyWithProgress
 public class FileCopyWithProgress {
   public static void main(String[] args) throws Exception {
-    String localSrc = args[0];
-    String dst = args[1];
+    String localSrc = "/root/software/hadoop-2.6.4.tar.gz";
+    String dst = "hdfs://localhost/user/root/hadoop-2.6.4.tar_" + System.currentTimeMillis() + ".tar.gz";
     
     InputStream in = new BufferedInputStream(new FileInputStream(localSrc));
     
